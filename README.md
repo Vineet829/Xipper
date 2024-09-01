@@ -1,50 +1,105 @@
-# Welcome to your Expo app 👋
+# XIPPER React Native App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+XIPPER is a React Native application that allows users to sign up or log in using their phone number and OTP verification. The app also includes a home screen with location-based recommendations.
 
-## Get started
+## Table of Contents
 
-1. Install dependencies
+- [Features](#features)
+- [Installation](#installation)
+  - [Prerequisites](#prerequisites)
+  - [Frontend Setup](#frontend-setup)
+  - [Backend Setup](#backend-setup)
+- [Usage](#usage)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
+- [Contributing](#contributing)
+- [License](#license)
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- User authentication via phone number and OTP
+- Location-based recommendations
+- Categories and recommendations display
+- Logout functionality
 
-   ```bash
-    npx expo start
-   ```
+## Installation
 
-In the output, you'll find options to open the app in a
+### Prerequisites
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Node.js and npm (Node Package Manager)
+- Expo CLI
+- MongoDB
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Frontend Setup
 
-## Get a fresh project
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/xipper.git
+   cd xipper
+   ```  
 
-When you're ready, run:
+2. Install dependencies:
+```bash
+npm install
+```
+3. Start development server
 
 ```bash
-npm run reset-project
+expo start
+```
+### Backend Setup
+
+1. Go to the backend directory:
+
+```bash
+cd backend
+Installing dependencies:
+```
+2. Install dependencies:
+
+
+```bash
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+3 .Create a .env file in the backend directory and add the following environment variables:
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+TWILIO_ACCOUNT_SID=your_twilio_account_sid
+TWILIO_AUTH_TOKEN=your_twilio_auth_token
+TWILIO_SERVICE_SID=your_twilio_service_sid
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+4. Start the backend server:
 
-## Join the community
+```bash
+npm start
+```
+## Usage
 
-Join our community of developers creating universal apps.
+### Frontend
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **Login Screen**: Enter your phone number and select your country code to receive an OTP.
+- **OTP Authentication Screen**: Enter the OTP received via phone number to authenticate your account.
+- **Home Screen**: View location-based recommendations and categories.
+
+### Backend
+
+- **Send OTP**: `POST /api/auth/send-otp`
+  - Request Body:
+    ```json
+    {
+      "phoneNumber": "+1234567890"
+    }
+    ```
+
+- **OTP Authentication**: `POST /api/auth/verify-otp`
+  - Request Body:
+    ```json
+    {
+      "phoneNumber": "+1234567890",
+      "otp": "123456"
+    }
+    ```
