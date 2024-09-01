@@ -64,12 +64,13 @@ npm install
 
 
 3 .Create a .env file in the backend directory and add the following environment variables:
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-TWILIO_ACCOUNT_SID=your_twilio_account_sid
-TWILIO_AUTH_TOKEN=your_twilio_auth_token
-TWILIO_SERVICE_SID=your_twilio_service_sid
+
+- PORT=5000
+- MONGO_URI=your_mongodb_connection_string
+- JWT_SECRET=your_jwt_secret
+- TWILIO_ACCOUNT_SID=your_twilio_account_sid
+- TWILIO_AUTH_TOKEN=your_twilio_auth_token
+- TWILIO_SERVICE_SID=your_twilio_service_sid
 
 
 4. Start the backend server:
