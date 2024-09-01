@@ -89,7 +89,16 @@ npm start
 
 
 - **OTP Authentication Screen**: Enter the OTP received via phone number to authenticate your account.
+
+<img src="https://github.com/Vineet829/Xipper/blob/main/assets/images/Xipper2.jpeg" alt="Login Screen" width="300" height="500">
+
+<img src="https://github.com/Vineet829/Xipper/blob/main/assets/images/Xipper3.jpeg" alt="Login Screen" width="300" height="500">
+
 - **Home Screen**: View location-based recommendations and categories.
+
+<img src="https://github.com/Vineet829/Xipper/blob/main/assets/images/Xipper4.jpeg" alt="Login Screen" width="300" height="500">
+
+<img src="https://github.com/Vineet829/Xipper/blob/main/assets/images/Xipper5.jpeg" alt="Login Screen" width="300" height="500">
 
 ### Backend
 
