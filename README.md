@@ -45,7 +45,7 @@ npm install
 3. Start development server
 
 ```bash
-expo start
+npx expo start
 ```
 ### Backend Setup
 
