@@ -82,7 +82,8 @@ npm start
 ### Frontend
 
 - **Login Screen**: Enter your phone number and select your country code to receive an OTP.
-![Xipper](https://github.com/Vineet829/Xipper/blob/main/assets/images/Xipper1.jpeg)
+
+<img src="https://github.com/Vineet829/Xipper/blob/main/assets/images/Xipper1.jpeg" alt="Login Screen" width="300" height="500">
 
 
 
