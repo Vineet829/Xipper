@@ -77,34 +77,29 @@ TWILIO_SERVICE_SID=your_twilio_service_sid
 ```bash
 npm start
 ```
+## Usage
 
-Usage
+### Frontend
 
-Frontend
-Login screen : Enter your phone number and select your country code to receive an OTP.
-OTP authentication screen : Enter the OTP received via phone number to authenticate your account.
-Home screen : View location-based recommendations and categories.
+- **Login Screen**: Enter your phone number and select your country code to receive an OTP.
+- **OTP Authentication Screen**: Enter the OTP received via phone number to authenticate your account.
+- **Home Screen**: View location-based recommendations and categories.
 
+### Backend
 
-Backend
-Send OTP :POST /api/auth/send-otp
+- **Send OTP**: `POST /api/auth/send-otp`
+  - Request Body:
+    ```json
+    {
+      "phoneNumber": "+1234567890"
+    }
+    ```
 
-Request Body :
-
-json
-
-
-{
-  "phoneNumber": "+1234567890"
-}
-OTP Authentication :POST /api/auth/verify-otp
-
-Request Body :
-
-json
-
-
-{
-  "phoneNumber": "+1234567890",
-  "otp": "123456"
-}
+- **OTP Authentication**: `POST /api/auth/verify-otp`
+  - Request Body:
+    ```json
+    {
+      "phoneNumber": "+1234567890",
+      "otp": "123456"
+    }
+    ```
