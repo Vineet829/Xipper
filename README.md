@@ -82,6 +82,11 @@ npm start
 ### Frontend
 
 - **Login Screen**: Enter your phone number and select your country code to receive an OTP.
+![Xipper](https://github.com/Vineet829/Xipper/blob/main/assets/images/Xipper1.jpeg)
+
+
+
+
 - **OTP Authentication Screen**: Enter the OTP received via phone number to authenticate your account.
 - **Home Screen**: View location-based recommendations and categories.
 
