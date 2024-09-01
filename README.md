@@ -47,7 +47,7 @@ npm install
 ```bash
 expo start
 ```
-Backend Setup
+### Backend Setup
 
 1. Go to the backend directory:
 
