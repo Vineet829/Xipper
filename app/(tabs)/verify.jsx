@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useRouter, useLocalSearchParams } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+
 const OtpVerificationScreen = () => {
   const { phoneNumber } = useLocalSearchParams();
   const [otp, setOtp] = useState(['', '', '', '', '', '']);
