@@ -7,6 +7,7 @@ import axios from 'axios';
 import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+
 const fetchFonts = () => {
   return Font.loadAsync({
     'poppins-regular': require('../../assets/fonts/Poppins/Poppins-Regular.ttf'),
