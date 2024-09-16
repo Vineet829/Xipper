@@ -1,6 +1,6 @@
 # XIPPER React Native App
 
-XIPPER is a React Native application that allows users to sign up or log in using their phone number and OTP verification. The app also includes a home screen with location-based recommendations.
+XIPPER is a React Native app that enables users to sign up or log in with their phone number and OTP verification.
 
 ## Table of Contents
 
