@@ -14,6 +14,7 @@ const categories = [
   { id: '4', name: 'Hotel', image: require('../../assets/images/hotel.jpg') },
 ];
 
+
 const recommendations = [
   {
     id: '1',
